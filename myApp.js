@@ -1,12 +1,13 @@
 const express = require('express');
 const helmet = require('helmet');
-app.use(helmet());
 
 const app = express();
-const PORT = process.env.PORT || 3030;
+app.use(helmet());
 
-app.listen(PORT, () => {
-  console.log(`useful prgrammer info security App started on port ${PORT}`);
+const Port = process.env.PORT || 3030;
+
+app.listen(Port, () => {
+  console.log(`useful prgrammer info security App started on port ${Port}`);
 });
 
 
